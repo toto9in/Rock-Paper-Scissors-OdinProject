@@ -4,10 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Rock Paper Scissors</title>
 </head>
 <body>
-    
+    <header class="header">
+        <h1 class="title">ROCK PAPER SCISSORS</h1>
+    </header>
+    <main class="main">
+        <div class="scoreboard">
+            <h2 class="main-message">First to score 5 wins!!!</h2>
+            <div class="scores-container">
+                <div class="score-box">
+                    <p class="score" id="playerScore">You: 0</p>
+                    <img class="sign" id="playerSign" src="img/questionmark.svg">
+                </div>
+                <div class="score-info" id="scoreInfo">Choose one</div>
+                <div class="score-box">
+                    <p class="score" id="computerScore">Computer: 0</p>
+                    <img class="sign" id="computerSign" src="img/questionmark.svg">
+                </div>
+            </div>
+            <div class="player-choices">
+                <button class="choice-rock" id="rockBtn">
+                    <img id="rock-img" src="img/rock.svg">
+                </button>
+                <button class="choice-paper" id="paperBtn">
+                    <img id="paper-img" src="img/paper.svg">
+                </button>
+                <button class="choice-scissors" id="scissorsBtn">
+                    <img id="scissors-img" src="img/scissors.svg">
+                </button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+            made by totonine
+        </p>
+    </footer>
+    <div class="modal" id="endgameModal">
+        <p class="modal-title" id="endgameMsg"></p>
+        <button class="btn btn-restart" id="restartBtn">Play again</button>
+      </div>
+      <div class="overlay" id="overlay"></div>
 </body>
 <script src="script.js"></script>
 </html>
